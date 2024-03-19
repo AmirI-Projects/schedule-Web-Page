@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- HTML Code V2.9 -->
+<!--  
+
+
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vancouver Simulator Schedule</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="require.js"></script>
+		<script src="webJavascript.js"></script>
+	</head>
+	<body onload="startTime()">
+		
+		<div class="rightLogo_container">
+			<img class="rightLogo_img"></img>
+		</div>
+		<div class="leftLogo_container">
+			<img class="leftLogo_img"></img>
+		</div>
+		<div class="header_titleContainer commonGlass_bg">
+			<h1 id="title_text">Vancouver Training Center</h1>
+		</div>
+		
+		
+		<div class="schedule_body commonGlass_bg">
+			
+			<!-- Left Main Column for the time of the schedule  -->
+			<div class="leftMainColumn">
+				<div class="leftMainColumn_header">
+					<div id="clock"></div>
+					<div id="date"></div>
+				</div>
+				<div class="leftMainColumn_body testDark_bg">
+
+					<!-- Time Tape Section Starts Here: -->
+					<div class="timeTapeContainer testDark_bg">
+						<div class="timeTape">
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow1"><hr></div>
+								<div class="tickTime" id ="tickTime1">10:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow2"><hr></div>
+								<div class="tickTime" id ="tickTime2"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow3"><hr></div>
+								<div class="tickTime" id ="tickTime3"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow4"><hr></div>
+								<div class="tickTime" id ="tickTime4"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow5"><hr></div>
+								<div class="tickTime" id ="tickTime5">11:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow6"><hr></div>
+								<div class="tickTime" id ="tickTime6"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow7"><hr></div>
+								<div class="tickTime" id ="tickTime7"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow8"><hr></div>
+								<div class="tickTime" id ="tickTime8"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow9"><hr></div>
+								<div class="tickTime" id ="tickTime9">12:00</div>
+							</div>					
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow10"><hr></div>
+								<div class="tickTime" id ="tickTime10"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow11"><hr></div>
+								<div class="tickTime" id ="tickTime11"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow12"><hr></div>
+								<div class="tickTime" id ="tickTime12"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow13"><hr></div>
+								<div class="tickTime" id ="tickTime13">13:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow14"><hr></div>
+								<div class="tickTime" id ="tickTime14"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow15"><hr></div>
+								<div class="tickTime" id ="tickTime15"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow16"><hr></div>
+								<div class="tickTime" id ="tickTime16"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow17"><hr id="midTickRow"></div>
+								<div class="tickTime" id ="tickTime17">14:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow18"><hr></div>
+								<div class="tickTime" id ="tickTime18"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow19"><hr></div>
+								<div class="tickTime" id ="tickTime19"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow20"><hr></div>
+								<div class="tickTime" id ="tickTime20"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow21"><hr></div>
+								<div class="tickTime" id ="tickTime21">15:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow22"><hr></div>
+								<div class="tickTime" id ="tickTime22"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow23"><hr></div>
+								<div class="tickTime" id ="tickTime23"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow24"><hr></div>
+								<div class="tickTime" id ="tickTime24"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow25"><hr></div>
+								<div class="tickTime" id ="tickTime25">16:00</div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow26"><hr></div>
+								<div class="tickTime" id ="tickTime26"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow27"><hr></div>
+								<div class="tickTime" id ="tickTime27"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow28"><hr></div>
+								<div class="tickTime" id ="tickTime28"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow29"><hr></div>
+								<div class="tickTime" id ="tickTime29">17:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow30"><hr></div>
+								<div class="tickTime" id ="tickTime30"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow31"><hr></div>
+								<div class="tickTime" id ="tickTime31"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow32"><hr></div>
+								<div class="tickTime" id ="tickTime32"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow33"><hr></div>
+								<div class="tickTime" id ="tickTime33">18:00</div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow34"><hr></div>
+								<div class="tickTime" id ="tickTime34"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow35"><hr></div>
+								<div class="tickTime" id ="tickTime35"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow36"><hr></div>
+								<div class="tickTime" id ="tickTime36"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow37"><hr></div>
+								<div class="tickTime" id ="tickTime37">19:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow38"><hr></div>
+								<div class="tickTime" id ="tickTime38"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow39"><hr></div>
+								<div class="tickTime" id ="tickTime39"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow40"><hr></div>
+								<div class="tickTime" id ="tickTime40"></div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow41"><hr></div>
+								<div class="tickTime" id ="tickTime41">20:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow42"><hr></div>
+								<div class="tickTime" id ="tickTime42"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow43"><hr></div>
+								<div class="tickTime" id ="tickTime43"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow44"><hr></div>
+								<div class="tickTime" id ="tickTime44"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow45"><hr></div>
+								<div class="tickTime" id ="tickTime45">21:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow46"><hr></div>
+								<div class="tickTime" id ="tickTime46"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow47"><hr></div>
+								<div class="tickTime" id ="tickTime47"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow48"><hr></div>
+								<div class="tickTime" id ="tickTime48"></div>
+							</div>
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow49"><hr></div>
+								<div class="tickTime" id ="tickTime49">22:00</div>
+							</div>						
+							<div class="tickRow">
+								<div class="tickSize" id ="tickRow50"><hr></div>
+								<div class="tickTime" id ="tickTime50"></div>
+							</div>												
+						</div>
+						
+						<div class="curTimeTapeContain curTimeTape_bg">
+							<div class="curTimeOfTape" id="curTimeOfTapeText"></div>
+						</div>
+					</div>	
+					<div class="dateTape">						
+						<div class="DateTapeContain" id="curDateTape">
+							
+						</div>						
+					</div>				
+				</div>	
+			</div>		
+			 
+			
+			<!-- Right Main Column for the Schedule information and their associated session's data -->
+			<div class="rightMainColumn">
+				<div class="leftMinor_column">
+					<div class="leftMinor_Headercolumn">
+						<div class="minorColumnHeader1_title header1_style">FFS</div>
+
+						<!-- Header Column Section for FFS Simulators -->
+						<div class="leftLogo_header2">
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column1">
+								<h1>A-320</h1>
+								<img src="Aircraft_images\A320\A320_ffs_ched-1-2.png"></img>							
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column2">
+								<h1>B-787 800</h1>
+								<img src="Aircraft_images\B787\utt_787-8_aca_cghpq-3.png"></img>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column3">
+								<h1>B-737 MAX</h1>								
+								<img src="Aircraft_images\B737Max\aia_737-MAX8_aca_cgekz-2.png"></img>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column4">
+								<h1>D-8 Q400</h1>
+								<img src="Aircraft_images\Dash-8-Q400\aig_Dash 8-Q400_cggmu-2.png"></img>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column5">
+								<h1>D-8 100/300</h1>
+								<img src="Aircraft_images\Dash-8-Q300\tfs_jza_Dash 8-Q300_cfruz_hd-2.png"></img>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column6">
+								<h1>B-777 300</h1>
+								<img src="Aircraft_images\B777\tfs_777-300ER_aca_cfram-2.png"></img>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg" id="leftMinorHeader_column6">
+								<h1>A-220 300</h1>
+								<img src="Aircraft_images\A220\Airbus-A220-300modelinAirCanada2.png"></img>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Left schedule Data body for every column starts here  -->
+					<div class="leftMinor_Bodycolumn  commonDataGlass_bg1">
+						
+						<div class="minorColumnBody commonDataColumn_bg" id="leftDataColumn1">
+							
+							<div class="dataBlock commonGlassData dataBlock_borderWhite" id="dataBlock_C1_D1">
+								
+								<div class="dataBlock_time dataBlock_textWhite">13:45-17:45</div>
+								<div class="dataBlock_title dataBlock_textWhite">Others ATO</div>
+								<div class="dataBlock_data dataBlock_textWhite">
+									Colin Ratushniak 258446 INS Zach Gendron 205078
+								</div>
+								
+							</div>
+							<div class="dataBlock commonGlassData dataBlock_borderGold" id="dataBlock_C1_D2">
+								<div class="dataBlock_time dataBlock_textGold">17:45-21:45</div>
+								<div class="dataBlock_title dataBlock_textGold">#243A-SPOT LEVEL</div>
+								<div class="dataBlock_data dataBlock_textGold">
+									ATO Colin Ratushniak 258446 INS Zach Gendron 205078
+								</div>
+							</div>
+						</div>
+						<div class="minorColumnBody"></div>
+						<div class="minorColumnBody commonDataColumn_bg"></div>
+						<div class="minorColumnBody"></div>
+						<div class="minorColumnBody commonDataColumn_bg"></div>
+						<div class="minorColumnBody"></div>
+						<div class="minorColumnBody commonDataColumn_bg"></div>
+					</div>
+				</div>
+				
+				<div class="resizer" id="splitter"></div>
+				
+				<div class="rightMinor_column">
+					<div class="rightMinor_Headercolumn">
+						<div class="minorColumnHeader1_title header1_style2">IPT / VSIM</div>
+						<!-- Header Column Section for IPT/VSIM Simulators -->
+						<div class="rightLogo_header2">
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column1">
+								<h1>B-787 IPT</h1>
+								<!--<img src=""></img>-->
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column2">
+								<h1>B-737 IPT</h1>
+								<!--<img src=""></img>-->
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column3">
+								<h1>B-777 IPT</h1>
+								<!--<img src=""></img>-->
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column4">
+								<h1>B-737 VSIM</h1>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column5">
+								<h1>A-220 IPT 1</h1>
+								<!--<img src=""></img>-->
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column6">
+								<h1>A-220 IPT 2</h1>
+								<!--<img src=""></img>-->
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column7">
+								<h1>A-220 VSIM 1</h1>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column8">
+								<h1>A-220 VSIM 2</h1>
+							</div>
+							<div class="MainHeaderColumn_data commonHeaderData_bg2" id="rightMinorHeader_column9">
+								<h1>D-8 IPT    1</h1>
+							</div>
+						</div>
+					</div>
+					<div class="rightMinor_Bodycolumn commonDataGlass_bg1">
+						<div class="testData" id="stat-3"></div> 
+					</div>
+				</div>						
+			</div>
+		</div>						
+	</body>
+</html>

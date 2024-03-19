@@ -1,0 +1,1287 @@
+/* CSS code V9.1*/
+
+/*
+
+
+*/
+
+/*****************************************************************
+						Golobal Variables
+******************************************************************/
+:root{
+
+	--dataColumnWidth: 5.1vw;
+	--tickHight: 1.3vh;
+	
+}
+/*****************************************************************
+				Background Effects
+******************************************************************/
+/*
+	Please use the following link to get color Platters:
+	https://icolorpalette.com/color/dark-cyan
+*/
+.commonGlass_bg {
+	
+	/*Hex color code below is: 5C677D, rgb value: 92, 103, 125, */
+	background: rgba(92, 103, 125, 0.5);
+	
+	-webkit-backdrop-filter: contrast(3) blur(5px);
+	backdrop-filter: contrast(4) blur(5px);
+	
+}
+
+.commonGlassData{
+	
+	background: rgba(96, 96, 96, 0.2);
+	
+	-webkit-backdrop-filter: contrast(1) blur(7px);
+	backdrop-filter: contrast(1) blur(7px);
+}
+
+
+.commonBlueGlass_bg {
+	
+	/*background: rgba(255, 255, 255, 1.0);*/	
+	
+	-webkit-backdrop-filter: contrast(3) blur(15px);
+	backdrop-filter: contrast(4) blur(15px);	
+	
+}
+
+.commonRadialDataGlass_bg{
+	
+	/*background-color: rgba(4, 89, 175, 0.3);
+	background: -moz-radial-gradient(center, ellipse cover, #0047ea 0%, #151515 70%);
+	background: radial-gradient(#0047ea, #151515 90%);*/
+	
+	background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 30%);
+}
+
+.commonDataGlass_bg1{
+	
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(172, 224, 249, 0.2) 70%);
+}
+
+.commonDataColumn_bg{
+	
+	/*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(30, 140, 251, 0.12) 50%);*/
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 139, 139, 0.12) 50%);
+	/* rgba(172, 224, 249 */
+}
+
+.commonHeaderData_bg{
+	
+	 /* -->background-image: linear-gradient(180deg, rgba(30, 140, 251, 0.1), rgba(4, 200, 200, 0.5)90%);<--*/
+	/*background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.3));*/
+	background-image: linear-gradient(180deg, rgba(30, 140, 251, 0.1), rgba(0, 139, 139, 0.5)90%);
+	/* -webkit-backdrop-filter: contrast(3) blur(15px);
+	backdrop-filter: contrast(4) blur(15px);*/
+	
+}
+
+.commonHeaderData_bg2{
+	
+	 background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(4, 89, 175, 0.3));
+	/*background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.3));*/
+	/*rgba(4, 200, 200, 0.2)*/
+	 
+	/* -webkit-backdrop-filter: contrast(3) blur(15px);
+	backdrop-filter: contrast(4) blur(15px);*/
+}
+
+.curTimeTape_bg{
+	
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(255, 223, 1, 0.2) 80%);
+}
+
+.testDark_bg{
+	
+	background: rgba(0, 0, 0, 0.4);
+	
+}
+
+.testRed_bg{
+	
+	background: rgba(255, 0, 0, 0.4);
+	
+}
+
+.testWhite_bg{
+	
+	background: rgba(255, 255, 255, 0.4);
+	
+}
+/*****************************************************************
+				Imported Fonts
+******************************************************************/
+/* create font-family for the clock */
+@font-face{
+    font-family: 'Led_Digital-7';
+    src:  url('fonts/led_digital_7.ttf');
+	/*@import url('https://fonts.cdnfonts.com/css/led-digital-7');*/
+}
+
+@font-face{
+    
+	font-family: 'Lcd_DotMatrix-1';
+	src:  url('fonts/DotMatrix/DOTMATRI.ttf');
+}
+@font-face{
+    
+	font-family: 'DISPLAY_FREE_TFB';
+	src:  url('fonts/DisplayFree/DISPLAY_FREE_TFB.ttf');
+}
+@font-face{
+    
+	font-family: 'Lcd_scoreboard';
+	src:  url('fonts/ScoreBoard/scoreboard.ttf');
+}
+@font-face{
+    
+	font-family: 'Lcd_REGISTER';
+	src:  url('fonts/Register/REGISTER.ttf');
+}
+@font-face{
+    
+	font-family: 'Lcd_WinTT-1';
+	src:  url('fonts/LCDWinTT/LCD2B.ttf');
+}
+@font-face{
+    
+	font-family: 'Lcd_WinTT-2';
+	src:  url('fonts/LCDWinTT/LCD2L.ttf');
+}
+@font-face{
+    
+	font-family: 'Lcd_WinTT-3';
+	src:  url('fonts/LCDWinTT/LCD2N.ttf');
+}
+@font-face{
+    
+	font-family: 'Airstrike';
+	src:  url('fonts/Airstrike/airstrike.ttf');
+}
+@font-face{
+    
+	font-family: 'airstrikehalf';
+	src:  url('fonts/Airstrike/airstrikehalf.ttf');
+}
+@font-face{
+    
+	font-family: 'airstrikegrad';
+	src:  url('fonts/Airstrike/airstrikegrad.ttf');
+}
+@font-face{
+    
+	font-family: 'airstrikelaser';
+	src:  url('fonts/Airstrike/airstrikelaser.ttf');
+}
+@font-face{
+    
+	font-family: 'Acens';
+	src:  url('fonts/Acens/Acens.ttf');
+}
+@font-face{
+    
+	font-family: 'Linebeam';
+	src:  url('fonts/linear_beam/Linebeam.ttf');
+}
+@font-face{
+    
+	font-family: 'PrussianBrewSolid';
+	src:  url('fonts/PrussianBrewSolid/PrussianBrew.ttf');
+}
+@font-face{
+    
+	font-family: 'Electrolize';
+	src:  url('fonts/Electrolize/Electrolize-Regular.ttf');
+}
+@font-face{
+    
+	font-family: 'Orbitron-Regular';
+	src:  url('fonts/Orbitron/Orbitron-Regular.ttf');
+}
+@font-face{
+    
+	font-family: 'Orbitron-Medium';
+	src:  url('fonts/Orbitron/Orbitron-Medium.ttf');
+}
+@font-face{
+    
+	font-family: 'Orbitron-Bold';
+	src:  url('fonts/Orbitron/Orbitron-Bold.ttf');
+}
+@font-face{
+    
+	font-family: 'barbatrick';
+	src:  url('fonts/Barbatrick/barbatrick.ttf');
+}
+@font-face{
+    
+	font-family: 'Slipstream';
+	src:  url('fonts/Slipstream/Slipstream.ttf');
+}
+/*****************************************************************
+				Test Data class 
+******************************************************************/
+.testData{
+	
+	font-size: 0.93vh;
+	font-family: Aerial, sans-serif;
+	color: #fff;
+	margin-top: 5px;
+	z-index: -1;
+}
+
+/************************************************************************************
+*******************************  Header Section	************************************
+************************************************************************************/
+/* This haeder tab is not being used. */
+.header_tab {	
+	
+	height: 60px;
+	margin-top: 110px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	bottom: 0;
+	display: block;
+	float: bottom;
+
+}
+
+/*Middle title container*/
+
+.header_titleContainer{
+	
+	width: 50vw;
+	height: 7vh;
+	float: center;
+	position: absolute;
+	top: 0;
+
+	right: 27%;
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+	margin-right: 1vw;
+	display: block;
+	border-radius: 15px;
+	overflow: hidden;
+	
+}
+
+#title_text {
+	
+	margin-top: 1.8vh;
+	z-index: 100;
+	width: 100%;
+	color: DodgerBlue;
+	
+	position: absolute;
+	float: center;	
+	
+	/*transform: translate(-30%, -50%);*/
+	transform: translate(0%, -40%);	
+	text-align:center;
+	/*font-family: "Times New Roman", Times, serif;*/
+	font-family: airstrikegrad, Times, serif;
+	/*font-size: 2.5em;*/
+	font-size: 1.7vw;
+	
+	/*text-shadow: 2px 2px 4px black;*/
+	text-shadow: 2px 2px 4px blue;
+	overflow: hidden;
+	white-space: nowrap;
+	
+}
+
+/************************************************
+		Top Corner Logo section
+************************************************/
+
+.rightLogo_container {
+	
+	height: 7vh;
+	width: 9vw;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top:1.7vh;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	display: block;
+	
+	/*background-image: url("CAE_logo.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;	
+	*/
+}
+
+.rightLogo_img {
+	
+	content:url("CAE_logo1.png");
+	height: 100%;
+	width: 100%;	
+}
+
+.leftLogo_container {
+	
+	height: 18vh;
+	width: 10vw;
+	float: right;
+	position: absolute;
+	top: -3.5vh;
+	left: -2vw;
+	margin-top:0px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	display: block;
+	
+
+}
+.leftLogo_img {
+	
+	content:url("air-canada-airline-logo-withWriting__transparent_bg.png");
+	height: 100%;
+	width: 100%;	
+}
+
+/************************************************************************************
+*******************************  Body Section	************************************
+************************************************************************************/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #002855;
+	background-image: url("backgroundimg2.jpg");
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	overflow: auto;
+		
+}
+
+.schedule_body{
+	
+	position: relative;
+	margin: 10px;
+	margin-top: 11vh;
+	display: block;	
+	
+	/* When you set the height to 100vh, the box element will
+	stretch its height to the full height of the viewport 
+	regardless of its parent height.*/	
+	height: 84vh;	
+	/*Do not need to add one for horizontal as div is a block-level element 
+	that will take the full width horizontally by default.*/
+	overflow: hidden;
+	/*overflow-y: scroll;*/
+}
+
+/************************************************************************
+				Left Main Column (time)
+************************************************************************/
+.leftMainColumn{	
+	
+	width: 9%;
+	float: left;
+	height: 99%;	
+	padding: 4px;
+	overflow-x: clip;
+	
+	overflow: hidden;
+	position: absolute;
+	Left: 0;
+	
+}
+
+/***************************************
+		Header of Left Main Column
+***************************************/
+.leftMainColumn_header{
+	
+	width: 100%;
+	height: 19%;
+	margin: 1px;
+	float: top;
+	margin-bottom: 0px;	
+	/*padding: 7px;*/
+	
+	text-align:center;
+	overflow: hidden;
+	
+}
+
+
+
+/* Left Header colock code is here. */
+#clock{
+	
+	font-family: Lcd_WinTT-3, 'sans-serif';
+	width: 100%;
+
+	font-size: 2.0vw; 	
+	text-shadow: 0px 0px 3px #fff;
+	color: #fff;
+	margin-top: 2.7vh;
+	letter-spacing: 2px;
+	
+}
+
+/*Left Header date code is here */
+#date{
+	
+	letter-spacing: 1px;
+	width: 100%;
+	font-size: 0.6vw;
+	font-family: Lcd_scoreboard, sans-serif;
+	text-shadow: 0px 0px 3px #fff;
+	color: #fff;
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
+/***************************************
+		Body of Left Main Column
+***************************************/
+.leftMainColumn_body{
+	
+	width: 100%;
+	height: 79%;
+	margin: 1px;	
+	
+	margin-top: 10px;
+	overflow: hidden;
+	text-align: center;
+	float: right;
+	flex: display;
+	flex-direction: row;
+	flex-shrink: 0;	
+}
+
+/**************************************************
+	The following class are for date and Time tape 
+***************************************************/
+
+/************************************
+			Time Tape section
+************************************/
+
+.timeTapeContainer
+{
+	height: 100%;
+	width: 54%;
+	margin-left: 1px;	
+	
+	float: right;
+	flex: display;	
+	flex-shrink: 0;
+	overflow: hidden;
+}
+
+.timeTape{
+	
+	height: 100%;
+	width: 100%;
+		
+	overflow: hidden;
+	float: right;
+	flex: display;
+	flex-direction: column;
+	flex-shrink: 0;
+	z-index: 0;
+}
+
+
+.tickRow{
+	
+	width: 100%;
+	position: relative;
+	height: 1.3vh;	
+
+	float: right;
+	flex: display;
+	flex-shrink: 0;
+	overflow: hidden;
+	z-index: 0;
+	
+}
+
+.tickSize hr{
+	
+	display: block;
+	style: inset;
+	background-color: #FFF;
+	height: 0.17vh;
+	/*height: 3px;*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 0px;
+	flex: display;
+	flex-shrink: 1;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	overflow: clip;	
+	
+}
+
+#midTickRow
+{
+	background-color: #FFDF01;
+}
+
+#tickTime17{
+	
+	color: #FFDF01;
+}
+
+.tickTime{
+	
+	width: 45%;
+	height: 100%;
+	float: right;
+	flex: display;
+	flex-shrink: 0;	
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	
+	font-size: 1.1vh;
+	
+	font-family: Arial, sans-serif;
+	letter-spacing: 1px;
+	color: #fff;
+	white-space: nowrap;	
+}
+
+.tickSize{
+	
+	height: 100%;
+	float: right;
+	flex: dispaly;
+	flex-shrink: 0;	
+	overflow: hidden;	
+}
+
+#tickRow1{
+	
+	width: 50%;	
+}
+
+#tickRow2{
+
+	width: 13%;		
+}
+#tickRow3{
+		
+	width: 30%;		
+}
+#tickRow4{
+		
+	width: 13%;	
+}
+#tickRow5{
+
+	width: 50%;			
+}
+#tickRow6{
+
+	width: 13%;		
+}
+#tickRow7{
+	
+	width: 30%;	
+}
+#tickRow8{	
+
+	width: 13%;	
+}
+#tickRow9{
+	
+	width: 50%;	
+}
+#tickRow10{
+	
+	width: 13%;	
+}
+#tickRow11{
+	
+	width: 30%;
+}
+#tickRow12{
+
+	width: 13%;
+}
+#tickRow13{
+		
+	width: 50%;	
+}
+#tickRow14{
+		
+	width: 13%;
+}
+#tickRow15{
+
+	width: 30%;
+}
+#tickRow16{
+
+	width: 13%;	
+}
+#tickRow17{
+	
+	width: 50%;	
+}
+#tickRow18{	
+
+	width: 13%;	
+}
+#tickRow19{
+	
+	width: 30%;	
+}
+#tickRow20{
+	
+	width: 13%;	
+}
+#tickRow21{
+	
+	width: 50%;	
+}
+#tickRow22{	
+
+	width: 13%;	
+}
+#tickRow23{
+	
+	width: 30%;
+}
+#tickRow24{
+	
+	width: 13%;	
+}
+#tickRow25{
+	
+	width: 50%;
+}
+#tickRow26{	
+
+	width: 13%;	
+}
+#tickRow27{
+	
+	width: 30%;	
+}
+#tickRow28{
+	
+	width: 13%;	
+}
+#tickRow29{
+	
+	width: 50%;	
+}
+#tickRow30{
+	
+	width: 13%;	
+}
+#tickRow31{
+	
+	width: 30%;
+}
+#tickRow32{	
+
+	width: 13%;
+}
+#tickRow33{
+	
+	width: 50%;
+}
+#tickRow34{
+	
+	width: 13%;	
+}
+#tickRow35{
+	
+	width: 30%;
+}
+#tickRow36{	
+
+	width: 13%;	
+}
+#tickRow37{
+	
+	width: 50%;	
+}
+#tickRow38{
+	
+	width: 13%;	
+}
+#tickRow39{
+	
+	width: 30%;	
+}
+#tickRow40{
+	
+	width: 13%;	
+}
+#tickRow41{
+	
+	width: 50%;	
+}
+#tickRow42{
+	
+	width: 13%;	
+}
+#tickRow43{
+	
+	width: 30%;
+}
+#tickRow44{
+	
+	width: 13%;	
+}
+#tickRow45{
+	
+	width: 50%;	
+}
+#tickRow46{
+	
+	width: 13%;	
+}
+#tickRow47{
+	
+	width: 30%;
+}
+#tickRow48{
+	
+	width: 13%;	
+}
+#tickRow49{
+	
+	width: 50%;	
+}
+#tickRow50{
+	
+	width: 13%;	
+}
+
+.curTimeTapeContain{
+	
+	width: 98%;
+	position: relative;
+	height: 1.3vh;
+	bottom: 44.4vh;
+
+	float: right;
+	flex: display;
+	flex-shrink: 0;
+	overflow: hidden;
+	z-index: 100;	
+}
+.curTimeOfTape{
+	
+	width: 50%;
+	height: 100%;
+	float: left;
+	flex: display;
+	flex-shrink: 0;	
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	border-style: solid;
+	border-width: 0px;
+	border: #FFDF01;
+	
+	
+	
+	font-family: Arial, sans-serif;
+	letter-spacing: 1px;
+	color: #FFDF01;
+	white-space: nowrap;	
+}
+
+#curTimeOfTapeText{
+	
+	font-size: 1.1vh;
+	
+}
+
+/************************************
+			Date Tape section
+************************************/
+.dateTape{
+	
+	height: 100%;
+	width: 44%;
+	margin-right: 0px;
+	float: top;
+	flex: display;
+	flex-direction: column;
+	flex-shrink: 0;
+	overflow: hidden;
+	
+}
+.DateTapeContain
+{
+	width: 100%;	
+	float: left;
+	flex: display;
+	flex-direction: row;
+	flex-shrink: 0;
+	overflow: hidden;	
+}
+#curDateTape{
+	
+	height: 100%;	
+}
+
+.activeDate
+{
+	width: 10%;
+	height: 100%;
+	flex: display;
+	position: relative;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+.DateString
+{
+	width: 88%;
+	height: 100%;
+	flex: display;
+	position: relative;
+	flex-shrink: 0;
+	overflow: hidden;
+	
+	letter-spacing: 1px;
+	font-size: 0.75vw;
+	font-family: Lcd_scoreboard, sans-serif;
+	text-shadow: 0px 0px 3px #fff;
+	color: #fff;
+	margin-top: 5px;
+	white-space: nowrap;
+	text-align: center;				
+}
+
+
+
+/************************************************************************
+				Right Main Column (Sims. and Session data)
+************************************************************************/
+.rightMainColumn{
+	
+	width: 90.5%;
+	float: right;
+	/*margin: 5px;*/
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	
+	padding: 2px;
+	overflow-x: clip;
+	flex-shrink: 1;	
+	position: absolute;
+	Right: 0;
+
+}
+
+.resizer{
+	
+	background-color: rgba(92, 103, 125, 0.8);
+	cursor: ew-resize;
+	height: 99%;
+	flex-shrink: 2;
+	width: 2px;
+	margin: 2px;
+	margin-right: 5px;
+}
+
+/**************************************
+		Left section of schedule data
+**************************************/
+
+.leftMinor_column{
+	width: 43.4%;
+	height: 99%;	
+	
+	margin: 1px;
+	margin-right: 5px;	
+	
+	flex-shrink: 1;
+	float: left;
+	overflow: hidden;	
+}
+
+/**************************************
+		Left header of schedule data
+**************************************/
+
+.leftMinor_Headercolumn{
+	
+	width: 100%;
+	height: 19%;
+	margin: 1px;
+	float: top;
+	overflow: hidden;
+}
+
+.leftLogo_header2{
+	
+	width: 100%;
+	height: 74%;
+	margin: 1px;
+	flex-direction: row;
+	float: left;
+	overflow: hidden;
+	display: flex;
+	white-space: nowrap;	
+	
+}
+
+/****************************************************************
+	The following classes are for individuale column header data
+****************************************************************/
+
+.MainHeaderColumn_data{
+	flex-basis: var(--dataColumnWidth);
+	height: 100%;
+	margin-left: 0.2vw;
+	margin-right: 0.2vw;
+	
+	float: left;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	flex-shrink: 0;
+	
+
+}
+
+.MainHeaderColumn_data img{
+	
+	float: bottom;
+	margin-top: 2vh;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	z-index: 3;
+
+}
+
+.MainHeaderColumn_data h1{
+	
+	float: top;
+	width: 100%;
+	position: absolute;
+
+	font-family: Acens, sans-serif;
+	font-size: 0.85vw;
+	letter-spacing: 3px;
+	white-space: normal;
+	color: #fff;
+	text-shadow: 0px 0px 0px #fff;
+	margin-top: 3hv;
+	margin-left: 3wv;
+	text-align: center;
+	display: table-cell;
+	z-index: 2;	
+	overflow: hidden;
+	
+}
+
+
+
+/**************************************
+		Left body of schedule data
+**************************************/
+
+.leftMinor_Bodycolumn{
+	
+	width: 100%;
+	height: 79%;
+	margin: 1px;
+	margin-top: 10px;
+	
+	
+	flex-direction: row;
+	float: left;
+	overflow: hidden;
+	/*display:  inline;*/
+	display: flex;
+	white-space: nowrap;
+}
+
+.minorColumnBody{
+	
+	/*5.1vw, 6vw*/
+	flex-basis: var(--dataColumnWidth);
+	/*width: 150px;*/
+	height: 100%;
+	margin-left: 0.2vw;
+	margin-right: 0.2vw;
+		
+	float: center;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	flex: dispaly;
+	flex-shrink: 0;
+	
+}
+
+/**************************************
+		Right section of schedule data
+**************************************/
+.rightMinor_column{
+	
+	width: 55.6%;
+	height: 99%;	
+	float: right;	
+	
+	flex-shrink: 3;
+	margin-left: 5px;	
+	margin: 1px;
+	overflow: hidden;
+}
+
+/**************************************
+		Right header of schedule data
+**************************************/
+
+.rightMinor_Headercolumn{
+	
+	width: 100%;
+	height: 19%;
+	margin: 1px;
+	float: top;
+	overflow: hidden;
+}
+
+.minorColumnHeader1_title{
+	
+	width: 100%;
+	height: 24%;
+	margin: 1px;
+	/*float: top;*/
+	overflow: hidden;
+
+	display: flex;
+	&:before,
+	&:after {
+		content: "";
+		flex: 1;
+	}	
+}
+
+.header1_style{
+	
+	align-items: center;
+
+	Background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 73, 73, 0.8) 50%);
+	color: white;
+
+	font-family: airstrikehalf, Times, serif;
+	letter-spacing: 2px;
+	font-size: 3.3vh;
+	white-space: nowrap;
+	line-height: 24%;
+	
+	&:before,
+	&:after {
+		/*background: white;*/
+		Background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) 50%);
+		padding: 3vw 0;
+		height: 0;
+		transform: rotate(45deg);
+	}
+	
+}
+
+.header1_style2{
+	
+	align-items: center;
+
+	Background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(45, 77, 109, 0.8) 50%);
+	color: white;
+	/*Orbitron-Bold*/
+	font-family: airstrikehalf, Times, serif;
+	letter-spacing: 2px;
+	font-size: 3.3vh;
+	white-space: nowrap;
+	line-height: 24%;
+	
+	
+	&:before,
+	&:after {
+		
+		Background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) 50%);
+		padding: 3vw 0;
+		height: 0;
+		transform: rotate(135deg);
+		
+	}
+	
+}
+
+.rightLogo_header2{
+	
+	width: 100%;
+	height: 74%;
+	margin: 1px;
+	flex-direction: row;
+	float: left;
+	overflow: hidden;
+
+	display: flex;
+	white-space: nowrap;	
+	
+}
+
+/**************************************
+		Left body of schedule data
+**************************************/
+.rightMinor_Bodycolumn{
+	
+	width: 100%;
+	height: 79%;
+	margin: 1px;
+	margin-top: 10px;
+	float: top;
+	overflow: hidden;	
+}
+
+/****************************************************************
+						Sessions Block Style 
+****************************************************************/
+.dataBlock{
+	
+	width: calc(100% - 3px);
+	position: absolute;
+	/*margin-top: 3px;*/
+	margin-bottom: 3px;
+	display: flex;
+	flex-direction: column;
+	float: top;
+	overflow: hidden;
+	white-space: nowrap;
+	flex-shrink: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 1px;
+		
+}
+
+.dataBlock_time{
+	
+	width: 100%;
+	height: 1.5vh;
+	position: relative;
+	display: table-cell;
+	float: top;
+	overflow: hidden;
+	white-space: nowrap;
+	flex-shrink: 0;
+	
+	font-family: Arial, sans-serif;
+	font-size: 0.65vw;
+	font-weight: 600;
+	
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 0.3vh;
+	z-index: 2;		
+}
+
+.dataBlock_title{
+	
+	width: 96%;
+	height: 3.0vh;
+	position: relative;
+	display: table-cell;
+	float: top;
+	overflow: hidden;
+	white-space: normal;
+	flex-shrink: 0;
+	
+	font-family: Arial, sans-serif;
+	font-size: 0.65vw;
+	font-weight: 600;
+	
+	letter-spacing: 0px;
+	text-align: left;
+	margin-top: 0.2vh;
+	margin-left: 2px;
+	margin-right: 1px;
+	z-index: 3;		
+	
+}
+
+.dataBlock_data
+{
+	width: 96%;
+	height: 72%;
+	position: relative;
+	display: table-cell;
+	float: top;
+	overflow: hidden;
+	white-space: normal;
+	flex-shrink: 0;
+	
+	font-family: Arial, sans-serif;
+	font-size: 0.55vw;
+	
+	text-align: left;
+	margin-top: 0.75vh;
+	margin-left: 2px;
+	margin-bottom: 2px;	
+	
+}
+.dataBlock_textGold
+{
+	color: #FFDF01;
+	
+}
+
+.dataBlock_textWhite
+{
+	color: #fff;
+	
+}
+
+.dataBlock_borderWhite
+{
+	border-color: #b2bec3;
+}
+
+.dataBlock_borderGold
+{
+	border-color: #FFDF01;
+}
+
+#dataBlock_C1_D1{
+	
+	top: calc((1*var(--tickHight)) - (0.2*var(--tickHight)));
+	height: calc((16 * var(--tickHight)) - (0.2*var(--tickHight)));
+	/*#FFDF01;*/
+	
+}
+
+#dataBlock_C1_D2{
+	
+	top: calc((17 * var(--tickHight)) - (0.2*var(--tickHight)));
+	height: calc((16 * var(--tickHight)) - (0.2*var(--tickHight)));
+	/*#FFDF01;*/
+	
+}
